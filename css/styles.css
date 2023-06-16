@@ -450,6 +450,10 @@ img {
     max-width: 264px;
 }
 
+.footer-social {
+    margin-right: 80px;
+}
+
 .footer-social-text {
     font-weight: 500;
     font-size: 16px;
@@ -487,6 +491,69 @@ img {
 
 .footer-icon {
     fill: var(--primary-white-color);
+}
+
+.footer-form {
+    max-width: 453px;
+    height: 80px;
+}
+
+.form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--background-color);
+    margin-bottom: 16px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.form-input {
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    border: 1px solid var(--background-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--background-color);
+}
+
+.form-input::placeholder {
+    font-size: 12px;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+    color: var(--background-color);
+    
+}
+
+.form-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color);
+    background-color: var(--primary-logo-color);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 24px;
+    gap: 16px;
+    max-width: 165px;
+}
+
+.form-button-icon {
+    fill: var(--background-color);
 }
 
 /* ----------------portfolio---------------- */
@@ -661,4 +728,136 @@ img {
 
 .modal-button-icon {
     transition: fill var(--transition);
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--primary-black-color);
+    margin-top: 72px;
+    margin-bottom: 16px;
+}
+
+.modal-field {
+    margin-left: 32px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+.modal-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--color-icon);
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: transparent;
+    padding-left: 38px;
+    padding-right: 16px;
+    transition: border-color var(--transition);
+}
+
+.modal-input:focus {
+    border-color: var(--primary-logo-color);
+}
+
+.modal-input:focus + .input-icon {
+    fill: var(--primary-logo-color);
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-icon {
+    fill: var(--primary-black-color);
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill var(--transition);
+}
+
+.modal-textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: transparent;
+    padding: 8px 16px;
+    resize: none;
+}
+
+.modal-textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-field-checkbox {
+    margin: 8px 24px 24px 24px;
+}
+
+.check-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--color-icon);
+    display: flex;
+    align-items: center;
+}
+
+.check-text span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.check-text a {
+    line-height: 1.33;
+    text-decoration-line: underline;
+    color: var(--primary-logo-color);
+}
+
+.input-check:checked + .check-text span {
+    background-color: #404BBF;
+    border: 1px solid #404BBF;
+    fill: var(--primary-white-color);
+}
+
+.modal-send-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--background-color);
+    padding: 16px 32px;
+    background-color: var(--primary-logo-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    min-width: 169px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
 }
